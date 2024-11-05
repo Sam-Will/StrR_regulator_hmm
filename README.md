@@ -1,5 +1,3 @@
----
-
 # StrR-like Regulator HMM Model  
 **Author:** Sam Williams  
 **Date:** 06/03/2024  
@@ -42,9 +40,10 @@ hmmscan --tblout mibig_3.0_tbl_StrR_test.tbl --cpu 12 --noali --nobias StrR_mode
 - **Summary of Results:**  
   - **High-Scoring Hits**:  
     - Highest: 469.6 (vancomycin)
-    - Next Highest: 318.9 (keratinimicin A) — 59 hits total
-  - **Low-Scoring Hits**:  
+  - **Low-Scoring Hits Examples**:  
     - Lowest: -12.9 (xenovulene A)
-    - Next Lowest: 16.6 (aldgamycin) — 29 hits total
+    - Low cut off: 207.7 (streptonigrin) 
+
+**Suggested Cut-off based on bimodal distribution is 195**
 
 - **Results File:** `mibig_3.0_hmmsearch_results.csv`
